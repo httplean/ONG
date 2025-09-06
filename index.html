@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Links para importar a seta < da galeria de imagens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <img src="" alt="logo">
+        <a href="index.html">Home</a>
+        <a href="">Sobre nós</a>
+        <a href=".apresentacao">Equipe</a>
+        <a href="">Contato</a>
+        <a href="">Voluntariado</a>
+        <a href=""><section class="button">DOE</section class="button"></a>
+    </header>
+    <main>
+        <!--Apresentação da equipe-->
+        <section class="apresentacao">
+            <img src="" alt="equipe">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis iste ullam accusantium voluptatum et placeat nulla dolore 
+                cupiditate officia doloremque itaque iure aspernatur ut impedit, debitis ad, beatae illum?</p>
+        </section>
+        <!--Galeria de fotos-->
+        <section class="wrapper">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carrossel">
+                <img src="componentes/1.png" alt="img-1" draggable="false">
+                <img src="componentes/2.png" alt="img-2" draggable="false">
+                <img src="componentes/3.png" alt="img-3" draggable="false">
+                <img src="componentes/4.png" alt="img-4" draggable="false">
+                <img src="componentes/5.png" alt="img-5" draggable="false">
+                <img src="componentes/1.png" alt="img-6" draggable="false">
+                <img src="componentes/2.png" alt="img-7" draggable="false">
+                <img src="componentes/3.png" alt="img-8" draggable="false">
+                <img src="componentes/4.png" alt="img-9" draggable="false">
+                <img src="componentes/5.png" alt="img-10" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </section>
+    </main>
 </body>
 </html>

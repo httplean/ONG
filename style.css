@@ -2,16 +2,62 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;   /* essa função serve para tirar: " ° "   */
 }
 
 body {
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #ffff;
-    padding: 0 35px;
+    background: #ffffff;
+    padding: 0 35px;*/
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    
+
 }
+
+.Midia icons{
+    width: 100px;
+    height: auto;
+
+}
+
+header {
+    position: fixed;
+    width: 95vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    gap: 50px;
+
+    & img{
+        width: 20%;
+    }
+
+    & nav {
+        & ul{
+            display: grid;
+            grid-template-columns: repeat(5, 250px);
+        }
+    }
+    
+    
+
+}  
+
+.copyright{
+   margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center; 
+}
+
+
+
 
 
 /*Estiliza a galeria de fotos*/
@@ -76,4 +122,9 @@ body {
     .carrossel img{
         width: 100%;
     }
+}
+section{
+    background-image: repeating-radial-gradient(#000, #717171);   /* cor da pagina, ele mescla duas cores para o fundo*/
+    height: 100vh; /* para preencher a tela toda*/
+    position: relative;
 }

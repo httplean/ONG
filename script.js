@@ -4,6 +4,20 @@ const carrossel = document.querySelector(".carrossel"),
 
 let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff
 
+//Para enviar o formulário para voluntariado para o zap
+function enviarWhatsapp() {
+    var nome = document.querySelector('.nome').value;
+    var email = document.querySelector('.email').value;
+    var mensagem = document.querySelector('.mensagem').value;
+
+    var url = "https://wa.me/zap" + "?text="
+        + "Nome : " + encodeURIComponent(nome) + "%0a"
+        + "Email : " + encodeURIComponent(email) + "%0a"
+        + "Mensagem : " + encodeURIComponent(mensagem) + "%0a";
+
+    window.open(url, '_blank').focus();
+}
+
 
 const showHideIcons = () => {
     let scrollWidth = carrossel.scrollWidth - carrossel.clientWidth;

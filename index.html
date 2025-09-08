@@ -5,44 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!--Links para importar a seta < da galeria de imagens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!--Não apagar, ele importa a seta do carrossel de fotos-->
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>ONG</title>
 </head>
 <body>
     <header>
-        <img src="" alt="logo">
-        <a href="index.html">Home</a>
+        <img src="logoFicticio .png" alt="logo">
+        <!--<a href="index.html">Home</a>
         <a href="">Sobre nós</a>
         <a href=".apresentacao">Equipe</a>
         <a href="">Contato</a>
         <a href="">Voluntariado</a>
-        <a href=""><section class="button">DOE</section class="button"></a>
+        <a href=""><section class="button">DOE</section class="button"></a> -->
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#apresentacaoEquipe">Equipe</a></li>
+                <li><a href="voluntariado.html">Voluntariado</a></li>
+                <li><a href="#doacoes"><div class="doe">Doe Aqui</div></a></li>
+
+            </ul>
+        </nav>   
     </header>
     <main>
         <!--Apresentação da equipe-->
-        <section class="apresentacao">
-            <img src="" alt="equipe">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis iste ullam accusantium voluptatum et placeat nulla dolore 
-                cupiditate officia doloremque itaque iure aspernatur ut impedit, debitis ad, beatae illum?</p>
+        <section id="apresentacaoEquipe">
+            <img src="componentes/equipe.jpeg" alt="equipe">
+            <p>Nossa missão de transformar vidas só é possível graças à paixão e dedicação de uma equipe incrível. Cada 
+                membro da Esperança em Ação contribui com seu talento e expertise para garantir que nossos projetos atinjam 
+                quem mais precisa, de forma eficiente e transparente. Somos um grupo de profissionais e voluntários unidos 
+                por um mesmo propósito: construir um futuro mais justo para todos.</p>
         </section>
         <!--Galeria de fotos-->
-        <section class="wrapper">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <div class="carrossel">
-                <img src="componentes/1.png" alt="img-1" draggable="false">
-                <img src="componentes/2.png" alt="img-2" draggable="false">
-                <img src="componentes/3.png" alt="img-3" draggable="false">
-                <img src="componentes/4.png" alt="img-4" draggable="false">
-                <img src="componentes/5.png" alt="img-5" draggable="false">
-                <img src="componentes/1.png" alt="img-6" draggable="false">
-                <img src="componentes/2.png" alt="img-7" draggable="false">
-                <img src="componentes/3.png" alt="img-8" draggable="false">
-                <img src="componentes/4.png" alt="img-9" draggable="false">
-                <img src="componentes/5.png" alt="img-10" draggable="false">
-            </div>
-            <i id="right" class="fa-solid fa-angle-right"></i>
+        <section class="galeria">
+            <section class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carrossel">
+                    <img src="componentes/1.jpeg" alt="img-1" draggable="false">
+                    <img src="componentes/2.jpeg" alt="img-2" draggable="false">
+                    <img src="componentes/3.jpeg" alt="img-3" draggable="false">
+                    <img src="componentes/4.jpeg" alt="img-4" draggable="false">
+                    <img src="componentes/5.jpeg" alt="img-5" draggable="false">
+                    <img src="componentes/6.jpeg" alt="img-6" draggable="false">
+                    <img src="componentes/7.jpeg" alt="img-7" draggable="false">
+                    <img src="componentes/8.jpeg" alt="img-8" draggable="false">
+                    <img src="componentes/9.jpeg" alt="img-9" draggable="false">
+                    <img src="componentes/10.jpeg" alt="img-10" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </section>
         </section>
+
+        <!--Sobre a equipe-->
+        <section id="sobre"><!--Adicionei o id para poder chamar no menu e para colocar uma cor de fundo diferente-->
+            <h2>Sobre Nossa Ong</h2>
+            <p class="descOng"> <!--Renomeei a class-->
+            Nós da ONG ---- a Causa estamos ativos desde 2010 com o intuito de promover a educação e a inclusão social em 
+            comunidades de baixa renda. Nosso trabalho é baseado na convicção de que o acesso à informação e a oportunidades 
+            de aprendizado são os principais motores para a transformação de vidas e para a construção de um futuro mais justo.
+            <br>
+            Ao longo de mais de uma década, expandimos nossas atividades, que incluem:<br></p>
+            <ul>
+                <li>Oficinas de reforço escolar para crianças e adolescentes.</li>
+                <li>Cursos profissionalizantes para jovens e adultos.</li>
+                <li>Projetos de leitura em bibliotecas comunitárias.</li>
+            </ul>
+            <br>
+            <p>
+            Nossa equipe é formada por profissionais apaixonados e voluntários dedicados que acreditam no poder da solidariedade. 
+            Todo o nosso trabalho é mantido por doações e parcerias, e cada contribuição nos permite alcançar mais pessoas e fortalecer nosso impacto.
+            Se você também acredita que a educação pode mudar o mundo, convidamos você a conhecer nossos projetos e se juntar a nós nessa missão.
+            </p>
+        </section>
+
+        <!--Venha conhecer-->
+        <section id="venhaConhecer">
+            <div class="ladoEsquerdo">
+                <iframe class="localizacao" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.371456644511!2d-46.32166630000001!3d-23.94730149999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce039dcd3f10e9%3A0x643657ade3927eb3!2sSenac%20Santos!5e0!3m2!1spt-BR!2sbr!4v1757205903343!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="ladoDireito">
+                <h3>Venha nos conhecer!</h3>
+                <p>Apoiar uma causa é muito mais do que uma doação, é fazer parte de uma mudança.
+                Entre em contato para agendar sua visita à nossa ONG e ver de perto como a sua ajuda transforma vidas.</p>
+                <a href="https://wa.me/zap" id="botaoForm" onclick="enviarWhatsapp()" target="_blank">Agende sua visita</a>
+            </div>
+        </section>
+
+        <!--Área para doações-->
+        <section id="doacoes">
+            <div class="doacaoContainer">
+                <div class="doacaoTexto">
+                    <h4>Doações</h4>
+                    <p class="descDoacao">Gostaria de ajudar com uma doação? Acesse o QR-Code ao lado</p>
+                </div>            
+                <div class="qrCode">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.a_QjqyoOwG7B1PuDn2pPugHaHa?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="QR Code para Doações">
+                </div>
+            </div>
+        </section>
+
+        <!--Rodapé-->
+        <footer>
+        <div class="copyright">
+        <p>Siga-nos nas redes sociais 
+            <a href="https://www.instagram.com/codigoemconstrucao/ " target="_blank"><img src="https://img.icons8.com/?size=25&id=59813&format=png&color=FFFFFF" alt="logo do instagram"></a>
+            <br>Copyright © 2025 | ONG - desenvolvido por Evelyn e Raissa</p>
+        </div>
+        </footer>
     </main>
 </body>
 </html>
+

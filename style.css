@@ -6,91 +6,16 @@
 }
 
 body {
-    color: white;
-    font-size: 16px;
-    background-image: url(componentes/background.png);/*Foto estática do fundo*/
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-    position: fixed;
-    width: 100vw;/*Mudei para 100*/
-    left: 50%;
-    transform: translateX(-50%);
-    display: grid;
-    grid-template-columns: 1fr 650px;
-    gap: 50px;
-    background-color: #2726267c;
-    padding:8px;/*Adicionei um padding para espaçamento interno*/
-    z-index: 1;/*Para fazer com que o menu sobreponha todas as dobras do site*/
-    align-items: center;
-
-    & img{
-        width: 20%;
-        margin-left: 5%;/*Adicionei margem na esquerda pra desgrudar a logo da borda da tela*/
-        border-radius: 50px;
-    }
-
-    & nav {
-        & ul{
-            display: grid;
-            grid-template-columns: repeat(5, 120px);
-        }
-    }
-    
-}  
-/*Links do menu*/
-a {
-    text-decoration: none;
-    color: #bebcbc;
-}
-a:hover{
-    text-decoration: underline;
-    color: white;
-}
-.doe {
-    border: 2px solid #333;
-    margin: 0;
-    border-radius: 25px;
-    text-align: center;
-    padding: 2px;
-}
-.doe:hover{
-    border-color: white;
-}
-
-/*Apresentação da equipe*/
-#apresentacaoEquipe{
-    background-color: #696767;
-    height: auto;
-}
-#apresentacaoEquipe img{
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
-    display: block;
-}
-#apresentacaoEquipe p{
-    font-size: 20px;
-    padding: 0 10px;
-    max-width: 820px; 
-    margin: 0 auto;  
-    padding: 5%; 
-    text-align: center; 
-    line-height: 1.6; 
-}
-
-/*Estiliza a galeria de fotos*/
-.galeria{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 0 25px;
+    background: #ffff;
+    padding: 0 35px;
 }
+
+
+/*Estiliza a galeria de fotos*/
 .wrapper{
     max-width: 1200px;
     position: relative;
